@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <p> 오늘 날씨는 {{weather_data.weather}}이거, 온도는 섭씨는 {{weather_data.temperature}}도 입니다.</p>
+   <p> 오늘 날씨는 {{weather}}이거, 온도는 섭씨는 {{temperature}}도 입니다.</p> -->
+   <!-- <p>선수 1번 이름은 {{player.0.name}}이고, 소속팀은 {{player.0.team}}</p>
+   <p>선수 2번 이름은 {{player.1.name}}이고, 소속팀은 {{player.1.team}}</p>
+   <p>선수 3번 이름은 {{player.2.name}}이고, 소속팀은 {{player.2.team}}</p>
+    -->
+    <!-- {%for list_pl in player %}
+    <p>선수 이름은 {{list_pl.name}}이고, 소속팀은 {{list_pl.team}}</p>
+
+    {%endfor%}
+
+    {%for player in baseball_player %}
+    <p>선수 이름은 {{player.name}}이고, 소속팀은 {{player.team}}</p>
+    {% empty%}
+    <p>야구선수는 없습니다.</p>
+    {%endfor%}
+
+    <p>
+        {% if not weather.temperature%}
+        알 수 없습니다.
+        {% elif weather.temperature < 10 %}
+        {{weather.temperature}}도 이며, 매우 춥습니다.
+        {% elif weather.temperature > 30 %}
+        {{weather.temperature}}도 이며, 매우 덥습니다.
+        {% else %}
+        {{weather.temperature}}도 이며, 매우 애매니다.
+        {% endif %} -->
+        {% comment %}
+        {% lorem 3 p random %}
+        {% now 'jS F Y H:i' %}<br>
+        {% now 'Y-m-d' %}
+        {% endcomment %}
+        <!-- <h1>{% url 'url_test' 1 2 %}</h1> -->
+        <h1>{% url 'landing:home' %}</h1>
+    </p>
+</body>
+</html>
